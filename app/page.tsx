@@ -13,7 +13,6 @@ export default function HomePage() {
         <EventsPreview />
         <DemoBookingCTA />
         <TestimonialsSection />
-        <h1>Sorry we are currently down</h1>
       </main>
     </div>
   )
