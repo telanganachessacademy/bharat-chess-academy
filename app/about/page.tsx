@@ -168,7 +168,7 @@ export default function AboutPage() {
                 <p className="text-lg opacity-90">
                   We believe every student has the potential to become a champion.
                   Our personalized approach ensures each player receives the
-                  attention they need to excel.
+                  attention they need.
                 </p>
               </div>
             </div>
