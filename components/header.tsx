@@ -17,20 +17,10 @@ export function Header() {
 
   const navItems: NavItem[] = [
     { name: "Home", href: "/" },
-    {
-      name: "About",
-      href: "/about",
-      hasDropdown: true,
-      dropdownItems: [
-        { name: "Our Story", href: "/about/#story" },
-        { name: "Our Mission", href: "/about/#mission" },
-        { name: "Achievements", href: "/about/#achievements" },
-      ],
-    },
+    { name: "Online Coaching", href: "https://coaching.telanganachessacademy.com/" },
+    { name: "Events", href: "https://pages.razorpay.com/pl_RimudLa05GzfHG/view" },
     { name: "Courses", href: "/courses" },
     { name: "Our Coaches", href: "/coaches" },
-    { name: "Online Coaching", href: "https://coaching.telanganachessacademy.com/" },
-    { name: "Events", href: "/events" },
     { name: "Gallery", href: "/gallery" },
     { name: "Blogs", href: "/blogs" },
     { name: "Contact", href: "/contact" },
