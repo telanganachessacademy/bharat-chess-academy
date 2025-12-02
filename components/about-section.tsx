@@ -5,7 +5,7 @@ export function AboutSection() {
   const features = [
     {
       icon: Target,
-      title: "Professional Training",
+      title: "Professional Trainings",
       description: "Learn from FIDE rated instructors and professional chess coaches.",
     },
     {
