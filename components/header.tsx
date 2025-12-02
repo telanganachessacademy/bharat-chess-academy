@@ -18,7 +18,7 @@ export function Header() {
   const navItems: NavItem[] = [
     { name: "Home", href: "/" },
     { name: "Online Coaching", href: "https://coaching.telanganachessacademy.com/" },
-    { name: "Events", href: "https://pages.razorpay.com/pl_RimudLa05GzfHG/view" },
+    { name: "Events", href: "https://telanganachessacademy.com/tournaments/" },
     { name: "Courses", href: "/courses" },
     { name: "Our Coaches", href: "/coaches" },
     { name: "Gallery", href: "/gallery" },

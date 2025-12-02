@@ -45,7 +45,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden bg-background sm:pt-20 md:pt-24 lg:pt-28"
+      className="relative min-h-screen pt-29 flex items-center justify-center overflow-hidden bg-background sm:pt-25 md:pt-24 lg:pt-28"
       style={{
         background:
           "linear-gradient(135deg, #F5F7FA 0%, #E2E8F0 60%, #2B6CB0 90%, #9F7AEA 10%)",
@@ -77,7 +77,7 @@ export function HeroSection() {
                 </Button>
               </Link>
 
-              <Link href="https://pages.razorpay.com/pl_RimudLa05GzfHG/view" target="_blank">
+              <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
                 <Button size="lg" className="bg-[#805AD5] hover:bg-[#6B46C1] text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl">
                   <Trophy className="w-7 h-7 mr-3" />
                   EVENTS
