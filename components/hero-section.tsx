@@ -68,56 +68,97 @@ export function HeroSection() {
 
           
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              <Link href="https://coaching.telanganachessacademy.com/login" target="_blank">
-                <Button size="lg" className="bg-[#2B6CB0] hover:bg-[#2B6CB0]/90 text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl">
-                  <Users className="w-7 h-7 mr-3" />
-                  ONLINE COACHING
-                </Button>
-              </Link>
+           {/* CTA Buttons */}
+<div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+  
+  {/* ONLINE COACHING — RED */}
+  <Link href="https://coaching.telanganachessacademy.com/login" target="_blank">
+    <Button
+      size="lg"
+      className="bg-[#E53E3E] hover:bg-[#C53030] text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl"
+    >
+      <Users className="w-7 h-7 mr-3" />
+      ONLINE COACHING
+    </Button>
+  </Link>
 
-              <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
-                <Button size="lg" className="bg-[#805AD5] hover:bg-[#6B46C1] text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl">
-                  <Trophy className="w-7 h-7 mr-3" />
-                  EVENTS
-                </Button>
-              </Link>
-            </div>
+  {/* EVENTS — GREEN */}
+  <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
+    <Button
+      size="lg"
+      className="bg-[#38A169] hover:bg-[#2F855A] text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl"
+    >
+      <Trophy className="w-7 h-7 mr-3" />
+      EVENTS
+    </Button>
+  </Link>
+</div>
 
-            {/* Quick Meeting Buttons */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0">
-              <Link href="https://meet.google.com/vjj-cfpx-dav?pli=1" target="_blank">
-                <Button variant="outline" className="border-2 border-[#2B6CB0] text-[#2B6CB0] hover:bg-[#2B6CB0] hover:text-white font-semibold rounded-full">
-                  <VideoIcon className="w-5 h-5 mr-2" /> G-Meet
-                </Button>
-              </Link>
-              <Link href="https://meet.jit.si/TelanganaChessAcademy" target="_blank">
-                <Button variant="outline" className="border-2 border-[#2B6CB0] text-[#2B6CB0] hover:bg-[#2B6CB0] hover:text-white font-semibold rounded-full">
-                  <Play className="w-5 h-5 mr-2" /> Start Call
-                </Button>
-              </Link>
-              <Link href="https://meet.google.com/wuk-nfie-mgx" target="_blank">
-                <Button variant="outline" className="border-2 border-[#2B6CB0] text-[#2B6CB0] hover:bg-[#2B6CB0] hover:text-white font-semibold rounded-full">
-                  <Play className="w-5 h-5 mr-2" /> Call Naresh
-                </Button>
-              </Link>
-              <Link href="https://meet.google.com/atu-ziid-ojg" target="_blank">
-                <Button variant="outline" className="border-2 border-[#06402B] text-[#06402B] hover:bg-[#06402B] hover:text-white font-semibold rounded-full">
-                  <Sparkles className="w-5 h-5 mr-2" /> TCS Meeting
-                </Button>
-              </Link>
-              <Link href="https://meet.google.com/uux-vyxa-pgq" target="_blank">
-                <Button variant="outline" className="border-2 border-[#06402B] text-[#06402B] hover:bg-[#06402B] hover:text-white font-semibold rounded-full">
-                  <BellIcon className="w-5 h-5 mr-2" /> BCA Meeting
-                </Button>
-              </Link>
-              <Link href="https://meet.google.com/mxj-uwyj-vzp" target="_blank">
-                <Button variant="outline" className="border-2 border-[#06402B] text-[#06402B] hover:bg-[#06402B] hover:text-white font-semibold rounded-full">
-                  <BellIcon className="w-5 h-5 mr-2" /> Call Rohith
-                </Button>
-              </Link>
-            </div>
+{/* Quick Meeting Buttons */}
+<div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0">
+
+  {/* G-Meet — BLUE */}
+  <Link href="https://meet.google.com/vjj-cfpx-dav?pli=1" target="_blank">
+    <Button
+      variant="outline"
+      className="border-2 border-[#2B6CB0] text-[#2B6CB0] hover:bg-[#2B6CB0] hover:text-white font-semibold rounded-full"
+    >
+      <VideoIcon className="w-5 h-5 mr-2" /> G-Meet
+    </Button>
+  </Link>
+
+  {/* Start Call — PURPLE */}
+  <Link href="https://meet.jit.si/TelanganaChessAcademy" target="_blank">
+    <Button
+      variant="outline"
+      className="border-2 border-[#805AD5] text-[#805AD5] hover:bg-[#805AD5] hover:text-white font-semibold rounded-full"
+    >
+      <Play className="w-5 h-5 mr-2" /> Start Call
+    </Button>
+  </Link>
+
+  {/* Call Naresh — ORANGE */}
+  <Link href="https://meet.google.com/wuk-nfie-mgx" target="_blank">
+    <Button
+      variant="outline"
+      className="border-2 border-[#DD6B20] text-[#DD6B20] hover:bg-[#DD6B20] hover:text-white font-semibold rounded-full"
+    >
+      <Play className="w-5 h-5 mr-2" /> Call Naresh
+    </Button>
+  </Link>
+
+  {/* TCS Meeting — TEAL */}
+  <Link href="https://meet.google.com/atu-ziid-ojg" target="_blank">
+    <Button
+      variant="outline"
+      className="border-2 border-[#319795] text-[#319795] hover:bg-[#319795] hover:text-white font-semibold rounded-full"
+    >
+      <Sparkles className="w-5 h-5 mr-2" /> TCS Meeting
+    </Button>
+  </Link>
+
+  {/* BCA Meeting — PINK */}
+  <Link href="https://meet.google.com/uux-vyxa-pgq" target="_blank">
+    <Button
+      variant="outline"
+      className="border-2 border-[#D53F8C] text-[#D53F8C] hover:bg-[#D53F8C] hover:text-white font-semibold rounded-full"
+    >
+      <BellIcon className="w-5 h-5 mr-2" /> BCA Meeting
+    </Button>
+  </Link>
+
+  {/* Call Rohith — YELLOW */}
+  <Link href="https://meet.google.com/mxj-uwyj-vzp" target="_blank">
+    <Button
+      variant="outline"
+      className="border-2 border-[#D69E2E] text-[#D69E2E] hover:bg-[#D69E2E] hover:text-white font-semibold rounded-full"
+    >
+      <BellIcon className="w-5 h-5 mr-2" /> Call Rohith
+    </Button>
+  </Link>
+
+</div>
+
 
             {/* Description */}
             <p className="text-lg md:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto lg:mx-0 leading-relaxed">
