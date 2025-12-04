@@ -23,7 +23,8 @@ export function HeroSection() {
     "/hero-1.jpg",    // ← Put your images in public/images/
     "/hero-2.jpg",
     "/hero-3.jpg",
-    "/hero-4.jpg",
+    "/hero-5.jpg",
+    "/hero-6.jpg",
     // Or use external links:
     // "https://yourdomain.com/images/coaching.jpg",
     // "https://yourdomain.com/images/tournament.jpg",
