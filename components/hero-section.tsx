@@ -90,7 +90,7 @@ export function HeroSection() {
       className="bg-[#38A169] hover:bg-[#2F855A] text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl"
     >
       <Trophy className="w-7 h-7 mr-3" />
-      EVENTS
+      EVENTS & TOURNAMENTS
     </Button>
   </Link>
 </div>
