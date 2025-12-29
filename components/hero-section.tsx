@@ -56,7 +56,7 @@ export function HeroSection() {
           <div className="text-center lg:text-left space-y-8">
             
             {/* ADDED TITLE */}
-            <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#38A169]">
+            <h1 className="text-3xl md:text-3xl font-extrabold tracking-tight text-[#38A169]">
               Bharat Chess Academy
             </h1>
 
@@ -65,8 +65,8 @@ export function HeroSection() {
               {/* ONLINE COACHING — RED */}
               <Link href="https://coaching.telanganachessacademy.com/login" target="_blank">
                 <Button
-                  size="lg"
-                  className="bg-[#E53E3E] hover:bg-[#C53030] text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl"
+                  size="sm"
+                  className="bg-[#E53E3E] hover:bg-[#C53030] text-white  px-10 py-7 rounded-full text-md shadow-xl"
                 >
                   <Users className="w-7 h-7 mr-3" />
                   ONLINE COACHING
@@ -76,8 +76,8 @@ export function HeroSection() {
               {/* EVENTS — GREEN */}
               <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
                 <Button
-                  size="lg"
-                  className="bg-[#38A169] hover:bg-[#2F855A] text-white font-bold px-10 py-7 rounded-full text-lg shadow-xl"
+                  size="sm"
+                  className="bg-[#38A169] hover:bg-[#2F855A] text-white  px-10 py-7 rounded-full text-md shadow-xl"
                 >
                   <Trophy className="w-7 h-7 mr-3" />
                   EVENTS & TOURNAMENTS
