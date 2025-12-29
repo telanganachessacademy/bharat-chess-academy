@@ -103,7 +103,7 @@ export function HeroSection() {
                   variant="outline"
                   className="border-2 border-[#805AD5] text-[#805AD5] hover:bg-[#805AD5] hover:text-white font-semibold rounded-full"
                 >
-                  <Play className="w-5 h-5 mr-2" /> Start Call
+                  <Play className="w-5 h-5 mr-2" /> START CALL
                 </Button>
               </Link>
 
