@@ -98,7 +98,7 @@ export function HeroSection() {
                 <Crown className="w-4 h-4 text-emerald-600" />
                 <span className="text-xs font-bold text-emerald-600 uppercase tracking-widest">Premium Coaching</span>
               </div>
-              <h1 className="text-2xl md:text-4xl font-black tracking-tighter text-slate-900 leading-none">
+              <h1 className="text-2xl md:text-3xl font-black tracking-tighter text-slate-900 leading-none">
                 BHARAT CHESS {" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38A169] to-[#2B6CB0] animate-gradient">ACADEMY</span>
               </h1>
