@@ -124,7 +124,7 @@ export function HeroSection() {
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:opacity-90 text-white font-bold h-16 px-8 rounded-2xl shadow-2xl transition-all duration-300 text-lg group animate-pulse-glow"
               >
-                <Link href="https://coaching.telanganachessacademy.com/login" target="_blank">
+                <Link href="https://svc-ui-7.netlify.app/login" target="_blank">
                   <Users className="w-6 h-6 mr-2" />
                   ONLINE COACHING
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
