@@ -71,7 +71,7 @@ export function StatsSection() {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1E40AF] mb-4">
+          <h2 className="text-4xl md:text-4xl font-bold text-[#1E40AF] mb-4">
             Our Achievements
           </h2>
           <p className="text-lg md:text-xl text-[#334155] max-w-2xl mx-auto font-medium">

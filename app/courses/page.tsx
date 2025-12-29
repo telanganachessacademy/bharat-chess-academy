@@ -252,7 +252,7 @@ export default function CoursesPage() {
           <Badge className="mb-4 sm:mb-6 bg-gradient-to-r from-[#2B6CB0] to-[#9F7AEA] text-white px-4 sm:px-6 py-1 sm:py-2 text-sm sm:text-lg">
             Courses
           </Badge>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 md:mb-8 bg-gradient-to-r from-[#2B6CB0] to-[#9F7AEA] bg-clip-text text-transparent">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold mb-4 sm:mb-6 md:mb-8 bg-gradient-to-r from-[#2B6CB0] to-[#9F7AEA] bg-clip-text text-transparent">
             Chess Courses for Every Level
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">

@@ -104,7 +104,7 @@ export default function AboutPage() {
 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900">
+          <h2 className="text-3xl md:text-3xl font-bold text-center mb-16 text-gray-900">
             Our Achievements
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

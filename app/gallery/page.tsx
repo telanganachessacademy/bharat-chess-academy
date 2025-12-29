@@ -117,7 +117,7 @@ export default function GalleryPage() {
         <div className="absolute inset-0 bg-black/10" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Chess Gallery</h1>
+            <h1 className="text-5xl md:text-4xl font-bold mb-6">Chess Gallery</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto text-slate-200">Capturing moments of learning, competition, and chess excellence</p>
           </motion.div>
         </div>

@@ -67,7 +67,7 @@ export default function CoachesPage() {
           <Badge className="mb-6 bg-gradient-to-r from-[#2B6CB0] to-[#9F7AEA] text-white px-4 py-1.5 text-base">
             Meet Our Team
           </Badge>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#2D3748]">
+          <h1 className="text-4xl md:text-4xl font-bold mb-6 text-[#2D3748]">
             Our Expert Coaches
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
@@ -148,7 +148,7 @@ export default function CoachesPage() {
 
       <section className="py-16 px-4 bg-[#9F7AEA]/10">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-[#2D3748]">
+          <h2 className="text-4xl md:text-4xl font-bold mb-16 text-[#2D3748]">
             Why Choose Our Coaches?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
