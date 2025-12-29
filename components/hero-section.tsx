@@ -5,11 +5,12 @@ import {
   Play,
   Users,
   Trophy,
-  Star,
   Sparkles,
   Award,
   VideoIcon,
   BellIcon,
+  ChevronRight,
+  Crown,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -26,7 +27,45 @@ export function HeroSection() {
     "/hero.jpeg",
   ];
 
-  // Auto-change image every 4 seconds
+  const meetingLinks = [
+    {
+      href: "https://meet.google.com/vjj-cfpx-dav?pli=1",
+      icon: VideoIcon,
+      label: "G-MEET",
+      bg: "from-blue-500 to-indigo-600",
+    },
+    {
+      href: "https://meet.jit.si/TelanganaChessAcademy",
+      icon: Play,
+      label: "START CALL",
+      bg: "from-cyan-500 to-sky-600",
+    },
+    {
+      href: "https://meet.google.com/wuk-nfie-mgx",
+      icon: Play,
+      label: "Call Naresh",
+      bg: "from-purple-500 to-fuchsia-600",
+    },
+    {
+      href: "https://meet.google.com/atu-ziid-ojg",
+      icon: Sparkles,
+      label: "TCS Meeting",
+      bg: "from-emerald-500 to-teal-600",
+    },
+    {
+      href: "https://meet.google.com/uux-vyxa-pgq",
+      icon: BellIcon,
+      label: "BCA MEETING",
+      bg: "from-green-500 to-lime-600",
+    },
+    {
+      href: "https://meet.google.com/mxj-uwyj-vzp",
+      icon: BellIcon,
+      label: "Call Rohith",
+      bg: "from-orange-500 to-red-600",
+    },
+  ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -46,140 +85,94 @@ export function HeroSection() {
       {/* Decorative Blobs */}
       <div className="absolute top-8 right-8 w-24 h-24 bg-[#2B6CB0] rounded-full opacity-20 animate-pulse-slow"></div>
       <div className="absolute top-32 left-12 w-20 h-20 bg-[#9F7AEA] rounded-full opacity-15 animate-pulse-slow" style={{ animationDelay: "0.8s" }}></div>
-      <div className="absolute bottom-16 right-12 w-32 h-32 bg-[#2B6CB0] rounded-full opacity-15 animate-pulse-slow" style={{ animationDelay: "1.6s" }}></div>
-      <div className="absolute bottom-32 left-8 w-16 h-16 bg-[#FF69B4] rounded-full opacity-10 animate-pulse-slow" style={{ animationDelay: "2.4s" }}></div>
 
       <div className="container max-w-7xl mx-auto px-6 lg:px-16 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* LEFT COLUMN */}
-          <div className="text-center lg:text-left space-y-8">
+          <div className="text-center lg:text-left space-y-10">
             
-            {/* ADDED TITLE */}
-            <h1 className="text-3xl md:text-3xl font-extrabold tracking-tight text-[#38A169]">
-              Bharat Chess Academy
-            </h1>
+            {/* STYLIZED TITLE */}
+            <div className="space-y-4">
+              <div className="inline-flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full border border-emerald-200 animate-bounce-slow shadow-sm">
+                <Crown className="w-4 h-4 text-emerald-600" />
+                <span className="text-xs font-bold text-emerald-600 uppercase tracking-widest">Premium Coaching</span>
+              </div>
+              <h1 className="text-2xl md:text-4xl font-black tracking-tighter text-slate-900 leading-none">
+                BHARAT CHESS {" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#38A169] to-[#2B6CB0] animate-gradient">ACADEMY</span>
+              </h1>
+            </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
-              {/* EVENTS — GREEN */}
-              <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
-                <Button
-                  size="sm"
-                  className="bg-[#38A169] hover:bg-[#2F855A] text-white  px-10 py-7 rounded-full text-md shadow-xl"
-                >
-                  <Trophy className="w-7 h-7 mr-3" />
-                  EVENTS & TOURNAMENTS
-                </Button>
-              </Link>
-              {/* ONLINE COACHING — RED */}
-              <Link href="https://coaching.telanganachessacademy.com/login" target="_blank">
-                <Button
-                  size="sm"
-                  className="bg-[#E53E3E] hover:bg-[#C53030] text-white  px-10 py-7 rounded-full text-md shadow-xl"
-                >
-                  <Users className="w-7 h-7 mr-3" />
+            {/* PRIMARY CTA BUTTONS */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-2 border-[#38A169] text-[#38A169] hover:bg-[#38A169] hover:text-white font-bold h-16 px-8 rounded-2xl shadow-xl transition-all duration-300 text-lg group bg-white/50"
+              >
+                <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
+                  <Trophy className="w-6 h-6 mr-2" />
+                  EVENTS
+                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
+
+              <Button
+                asChild
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:opacity-90 text-white font-bold h-16 px-8 rounded-2xl shadow-2xl transition-all duration-300 text-lg group animate-pulse-glow"
+              >
+                <Link href="https://coaching.telanganachessacademy.com/login" target="_blank">
+                  <Users className="w-6 h-6 mr-2" />
                   ONLINE COACHING
-                </Button>
-              </Link>
-
-              
+                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </Button>
             </div>
 
-            {/* Quick Meeting Buttons - All Different Colors */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0">
-              {/* G-Meet — BLUE */}
-              <Link href="https://meet.google.com/vjj-cfpx-dav?pli=1" target="_blank">
-                <Button
-                  variant="outline"
-                  className="border-2 border-[#2B6CB0] text-[#2B6CB0] hover:bg-[#2B6CB0] hover:text-white font-semibold rounded-full"
+            {/* QUICK MEETING GRID - DIFFERENT COLORS */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-2xl mx-auto lg:mx-0">
+              {meetingLinks.map((link, idx) => (
+                <a 
+                  key={idx} 
+                  href={link.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block group"
                 >
-                  <VideoIcon className="w-5 h-5 mr-2" /> G-Meet
-                </Button>
-              </Link>
-
-              {/* Start Call — PURPLE */}
-              <Link href="https://meet.jit.si/TelanganaChessAcademy" target="_blank">
-                <Button
-                  variant="outline"
-                  className="border-2 border-[#805AD5] text-[#805AD5] hover:bg-[#805AD5] hover:text-white font-semibold rounded-full"
-                >
-                  <Play className="w-5 h-5 mr-2" /> START CALL
-                </Button>
-              </Link>
-
-              {/* Call Naresh — ORANGE */}
-              <Link href="https://meet.google.com/wuk-nfie-mgx" target="_blank">
-                <Button
-                  variant="outline"
-                  className="border-2 border-[#DD6B20] text-[#DD6B20] hover:bg-[#DD6B20] hover:text-white font-semibold rounded-full"
-                >
-                  <Play className="w-5 h-5 mr-2" /> Call Naresh
-                </Button>
-              </Link>
-
-              {/* TCS Meeting — TEAL */}
-              <Link href="https://meet.google.com/atu-ziid-ojg" target="_blank">
-                <Button
-                  variant="outline"
-                  className="border-2 border-[#319795] text-[#319795] hover:bg-[#319795] hover:text-white font-semibold rounded-full"
-                >
-                  <Sparkles className="w-5 h-5 mr-2" /> TCS Meeting
-                </Button>
-              </Link>
-
-              {/* BCA Meeting — PINK */}
-              <Link href="https://meet.google.com/uux-vyxa-pgq" target="_blank">
-                <Button
-                  variant="outline"
-                  className="border-2 border-[#D53F8C] text-[#D53F8C] hover:bg-[#D53F8C] hover:text-white font-semibold rounded-full"
-                >
-                  <BellIcon className="w-5 h-5 mr-2" /> BCA Meeting
-                </Button>
-              </Link>
-
-              {/* Call Rohith — YELLOW/GOLD */}
-              <Link href="https://meet.google.com/mxj-uwyj-vzp" target="_blank">
-                <Button
-                  variant="outline"
-                  className="border-2 border-[#00fffff] text-[#00fffff] hover:bg-[#D69E2E] hover:text-white font-semibold rounded-full"
-                >
-                  <BellIcon className="w-5 h-5 mr-2" /> Call Rohith
-                </Button>
-              </Link>
+                  <div className={`relative overflow-hidden bg-gradient-to-br ${link.bg} p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 active:scale-95 flex items-center gap-2 text-white`}>
+                    <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent transition-colors" />
+                    <link.icon className="w-4 h-4 relative z-10" />
+                    <span className="font-bold text-[10px] sm:text-xs uppercase tracking-wider relative z-10">
+                      {link.label}
+                    </span>
+                  </div>
+                </a>
+              ))}
             </div>
 
-            {/* Description removed as requested */}
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 max-w-xl mx-auto lg:mx-0">
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 text-center border border-white/30">
-                <div className="w-14 h-14 bg-[#2B6CB0] rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Trophy className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-3xl font-bold text-gray-900">120+</div>
-                <div className="text-gray-600">Tournaments</div>
+            {/* STATS */}
+            <div className="grid grid-cols-3 gap-4 max-w-xl mx-auto lg:mx-0 pt-4">
+              <div className="bg-white/60 backdrop-blur-md rounded-2xl p-4 text-center border border-white/40 shadow-sm">
+                <div className="text-2xl font-black text-slate-900">120+</div>
+                <div className="text-[10px] uppercase font-bold text-slate-500 tracking-tighter">Events</div>
               </div>
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 text-center border border-white/30">
-                <div className="w-14 h-14 bg-[#2B6CB0] rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Users className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-3xl font-bold text-gray-900">600+</div>
-                <div className="text-gray-600">Students</div>
+              <div className="bg-white/60 backdrop-blur-md rounded-2xl p-4 text-center border border-white/40 shadow-sm">
+                <div className="text-2xl font-black text-slate-900">600+</div>
+                <div className="text-[10px] uppercase font-bold text-slate-500 tracking-tighter">Students</div>
               </div>
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 text-center border border-white/30">
-                <div className="w-14 h-14 bg-[#9F7AEA] rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Award className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-3xl font-bold text-gray-900">60+</div>
-                <div className="text-gray-600">Champions</div>
+              <div className="bg-white/60 backdrop-blur-md rounded-2xl p-4 text-center border border-white/40 shadow-sm">
+                <div className="text-2xl font-black text-slate-900">60+</div>
+                <div className="text-[10px] uppercase font-bold text-slate-500 tracking-tighter">Champions</div>
               </div>
             </div>
           </div>
 
           {/* RIGHT COLUMN – Image Carousel */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-lg lg:max-w-2xl aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-white/30">
+            <div className="relative w-full max-w-lg lg:max-w-xl aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white/50">
               {images.map((src, index) => (
                 <div
                   key={index}
@@ -189,34 +182,49 @@ export function HeroSection() {
                 >
                   <Image
                     src={src}
-                    alt={`Bharat Chess Academy - Slide ${index + 1}`}
+                    alt={`Academy Slide ${index + 1}`}
                     fill
                     className="object-cover"
                     priority={index === 0}
-                    sizes="(max-width: 1024px) 90vw, 50vw"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                 </div>
               ))}
-
-              {/* Dot Indicators */}
-              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
+              
+              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
                 {images.map((_, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => setCurrentImageIndex(idx)}
-                    className={`transition-all duration-300 ${
-                      idx === currentImageIndex
-                        ? "w-10 h-3 bg-white rounded-full"
-                        : "w-3 h-3 bg-white/60 rounded-full hover:bg-white/80"
-                    }`}
-                    aria-label={`Go to image ${idx + 1}`}
-                  />
+                  <div key={idx} className={`h-1.5 rounded-full transition-all ${currentImageIndex === idx ? "w-8 bg-white" : "w-2 bg-white/50"}`} />
                 ))}
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes gradient {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient 4s ease infinite;
+        }
+        @keyframes bounce-custom {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+          animation: bounce-custom 3s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+          0%, 100% { box-shadow: 0 10px 30px -5px rgba(139, 92, 246, 0.4); }
+          50% { box-shadow: 0 15px 45px -5px rgba(139, 92, 246, 0.6); }
+        }
+        .animate-pulse-glow {
+          animation: pulse-glow 2s ease-in-out infinite;
+        }
+      `}</style>
     </section>
   );
 }
