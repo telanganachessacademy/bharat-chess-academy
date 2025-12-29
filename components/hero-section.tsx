@@ -62,6 +62,16 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+              {/* EVENTS — GREEN */}
+              <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
+                <Button
+                  size="sm"
+                  className="bg-[#38A169] hover:bg-[#2F855A] text-white  px-10 py-7 rounded-full text-md shadow-xl"
+                >
+                  <Trophy className="w-7 h-7 mr-3" />
+                  EVENTS & TOURNAMENTS
+                </Button>
+              </Link>
               {/* ONLINE COACHING — RED */}
               <Link href="https://coaching.telanganachessacademy.com/login" target="_blank">
                 <Button
@@ -73,16 +83,7 @@ export function HeroSection() {
                 </Button>
               </Link>
 
-              {/* EVENTS — GREEN */}
-              <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
-                <Button
-                  size="sm"
-                  className="bg-[#38A169] hover:bg-[#2F855A] text-white  px-10 py-7 rounded-full text-md shadow-xl"
-                >
-                  <Trophy className="w-7 h-7 mr-3" />
-                  EVENTS & TOURNAMENTS
-                </Button>
-              </Link>
+              
             </div>
 
             {/* Quick Meeting Buttons - All Different Colors */}
