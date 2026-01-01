@@ -114,7 +114,7 @@ export function HeroSection() {
               >
                 <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
                   <Trophy className="w-6 h-6 mr-2" />
-                  Events&Tournaments
+                  Events & Tournaments
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
@@ -126,7 +126,7 @@ export function HeroSection() {
               >
                 <Link href="https://svc-ui-7.netlify.app/login" target="_blank">
                   <Users className="w-6 h-6 mr-2" />
-                  ONLINE COACHING
+                  ONLINE Coaching
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
