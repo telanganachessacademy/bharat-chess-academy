@@ -96,7 +96,7 @@ export function HeroSection() {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full border border-emerald-200 animate-bounce-slow shadow-sm">
                 <Crown className="w-4 h-4 text-emerald-600" />
-                <span className="text-xs font-bold text-emerald-600 uppercase tracking-widest">Premium Coaching</span>
+                <span className="text-xs font-bold text-emerald-600 uppercase tracking-widest">Whatsapp 98 64 64 64 81</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black tracking-tighter text-slate-900 leading-none">
                 BHARAT CHESS {" "}
