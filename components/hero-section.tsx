@@ -114,7 +114,7 @@ export function HeroSection() {
               >
                 <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
                   <Trophy className="w-6 h-6 mr-2" />
-                  EVENTS
+                  EVENTS & TOURNAMENTS
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
