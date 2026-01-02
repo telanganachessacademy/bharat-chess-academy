@@ -65,7 +65,6 @@ export function Header() {
             </button>
           </div>
         </div>
-
         <div className="mt-2 lg:mt-0 text-xs md:text-sm text-[#2D3748] flex flex-col lg:flex-row lg:space-x-2 text-center lg:text-right">
           <span>WhatsApp/Call: +91 9864646481</span>
           <span className="lg:block hidden">|</span>
@@ -105,22 +104,26 @@ export function Header() {
                     </div>
                   )}
                 </div>
-              ) : item.name === "Online Coaching" ? (
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#2D3748] hover:text-[#2B6CB0] font-medium py-1 px-1.5 text-md rounded hover:bg-gray-100 whitespace-nowrap"
-                >
-                  {item.name}
-                </a>
               ) : (
-                <Link
-                  href={item.href}
-                  className="text-[#2D3748] hover:text-[#2B6CB0] font-medium py-1 px-1.5 text-md rounded hover:bg-gray-100 whitespace-nowrap"
-                >
-                  {item.name}
-                </Link>
+                <>
+                  {item.name === "ONLINE COACHING" || item.name === "Events" ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#2D3748] hover:text-[#2B6CB0] font-medium py-1 px-1.5 text-md rounded hover:bg-gray-100 whitespace-nowrap"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="text-[#2D3748] hover:text-[#2B6CB0] font-medium py-1 px-1.5 text-md rounded hover:bg-gray-100 whitespace-nowrap"
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </>
               )}
             </div>
           ))}
@@ -160,24 +163,28 @@ export function Header() {
                       </div>
                     )}
                   </div>
-                ) : item.name === "Online Coaching" ? (
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-[#2B6CB0] py-1.5 text-sm block"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
                 ) : (
-                  <Link
-                    href={item.href}
-                    className="hover:text-[#2B6CB0] py-1.5 text-sm block"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
+                  <>
+                    {item.name === "ONLINE COACHING" || item.name === "Events" ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-[#2B6CB0] py-1.5 text-sm block"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="hover:text-[#2B6CB0] py-1.5 text-sm block"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
+                  </>
                 )}
               </div>
             ))}
