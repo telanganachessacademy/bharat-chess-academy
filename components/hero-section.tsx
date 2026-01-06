@@ -55,7 +55,7 @@ export function HeroSection() {
     {
       href: "https://meet.google.com/uux-vyxa-pgq",
       icon: BellIcon,
-      label: "BCA MEETING",
+      label: "BCA Meeting",
       bg: "from-green-500 to-lime-600",
     },
     {
