@@ -112,7 +112,7 @@ export function HeroSection() {
                 variant="outline"
                 className="border-2 border-[#38A169] text-[#38A169] hover:bg-[#38A169] hover:text-white font-bold h-16 px-8 rounded-2xl shadow-xl transition-all duration-300 text-lg group bg-white/50"
               >
-                <Link href="https://telanganachessacademy.com/tournaments/" target="_blank">
+                <Link href="https://www.telanganachessacademy.com/events" target="_blank">
                   <Trophy className="w-6 h-6 mr-2" />
                   Events&Tournaments
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
