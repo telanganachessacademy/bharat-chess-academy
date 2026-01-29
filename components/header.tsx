@@ -17,7 +17,7 @@ export function Header() {
 
   const navItems: NavItem[] = [
     { name: "Home", href: "/" },
-    { name: "ONLINE COACHING", href: "https://svc-ui-7.netlify.app/login" },
+    { name: "ONLINE COACHING", href: "https://app.chesslang.com/app" },
     { name: "EVENTS", href: "https://www.telanganachessacademy.com/events" },
     { name: "Courses", href: "/courses" },
     { name: "Our Coaches", href: "/coaches" },
