@@ -29,7 +29,7 @@ export function HeroSection() {
 
   const meetingLinks = [
     {
-      href: "https://meet.google.com/vjj-cfpx-dav?pli=1",
+      href: "https://meet.google.com/nhx-mfzc-fsi",
       icon: VideoIcon,
       label: "G-MEET",
       bg: "from-blue-500 to-indigo-600",
@@ -41,27 +41,27 @@ export function HeroSection() {
       bg: "from-cyan-500 to-sky-600",
     },
     {
-      href: "https://meet.google.com/wuk-nfie-mgx",
+      href: "https://meet.google.com/isn-hyzm-bdk",
       icon: Play,
-      label: "NARESH NAIK",
+      label: "TCA MEETING",
       bg: "from-purple-500 to-fuchsia-600",
     },
     {
-      href: "https://meet.google.com/atu-ziid-ojg",
+      href: "https://meet.google.com/mwk-zhcq-fts",
       icon: Sparkles,
-      label: "TCS Meeting",
+      label: "BCA MEETING",
       bg: "from-emerald-500 to-teal-600",
     },
     {
-      href: "https://meet.google.com/uux-vyxa-pgq",
+      href: "https://meet.google.com/azx-brjh-ccv",
       icon: BellIcon,
-      label: "BCA Meeting",
+      label: "HCI MEETING",
       bg: "from-green-500 to-lime-600",
     },
     {
-      href: "https://meet.google.com/mxj-uwyj-vzp",
+      href: "https://meet.google.com/aoq-xcnz-mwx",
       icon: BellIcon,
-      label: "Call Rohith",
+      label: "NARESH NAIK",
       bg: "from-orange-500 to-red-600",
     },
   ];
