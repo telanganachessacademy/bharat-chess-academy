@@ -61,7 +61,7 @@ export function HeroSection() {
     {
       href: "https://meet.google.com/aoq-xcnz-mwx",
       icon: BellIcon,
-      label: "NARESH NAIK",
+      label: "Naresh Naik",
       bg: "from-orange-500 to-red-600",
     },
   ];
